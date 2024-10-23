@@ -165,7 +165,7 @@ export const Hero = styled(LazyImage)`
 export const Contact = styled.div`
   width: 100%;
   position: absolute;
-  bottom: 1.1rem;
+  bottom: 0.9rem;
   left: 30%;
   background: ${({ theme }) => theme.primary};
   display: flex;

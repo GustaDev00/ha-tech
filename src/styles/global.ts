@@ -26,7 +26,7 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   html {
-    font-size: calc(100vw / 1366 * 10);
+    font-size: calc(100vw / 1600 * 10);
     text-size-adjust: none;
     -moz-text-size-adjust: none;
     -ms-text-size-adjust: none;

@@ -17,7 +17,7 @@ export const Header = styled.header`
   padding: 2rem 11rem;
   z-index: 10;
 
-  ${mediaMaxWidth("isMobileOrTabletVertical")`
+  ${mediaMaxWidth("mobile")`
     padding: 2rem 7.6rem;
   `}
 
@@ -29,7 +29,7 @@ export const Header = styled.header`
 export const Logo = styled(_Logo)``;
 
 export const Nav = styled.nav`
-  ${mediaMaxWidth("isMobileOrTabletVertical")`
+  ${mediaMaxWidth("mobile")`
     display: none;
   `}
 `;
@@ -45,7 +45,7 @@ export const List = styled.ul`
   line-height: 3.4rem;
   letter-spacing: -0.091rem;
 
-  ${mediaMaxWidth("isMobileOrTabletVertical")`
+  ${mediaMaxWidth("mobile")`
     flex-direction: column;
     font-size: 3rem;
     font-style: normal;
@@ -87,7 +87,7 @@ export const Item = styled.li<{ $active: boolean }>`
   &::before {
     display: none;
 
-    ${mediaMaxWidth("isMobileOrTabletVertical")`
+    ${mediaMaxWidth("mobile")`
         display: block;
     `}
   }
@@ -102,6 +102,15 @@ export const Link = styled(_Link)``;
 export const Content = styled.div`
   display: flex;
   gap: 2.6rem;
+`;
+
+export const ButtonContact = styled(ButtonSwipe)`
+  background: #0f1b3e;
+  padding: 2rem 6rem;
+
+  ${mediaMaxWidth("mobile")`
+    display: none;
+  `}
 `;
 
 export const ExternalLink = styled.a`
@@ -147,7 +156,7 @@ export const Button = styled.button`
   cursor: pointer;
   position: relative;
 
-  ${mediaMaxWidth("isMobileOrTabletVertical")`
+  ${mediaMaxWidth("mobile")`
     display: block;
   `}
 `;
@@ -256,7 +265,9 @@ export const LinkFooter = styled.a`
   line-height: 140%;
 `;
 
-export const ButtonFooter = styled(ButtonSwipe)``;
+export const ButtonFooter = styled(ButtonSwipe)`
+  background: #0f1b3e;
+`;
 
 export const Line = styled.div`
   height: 0.1rem;

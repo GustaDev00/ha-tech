@@ -46,6 +46,10 @@ export const Subtitle = styled.p`
 
 export const Slide = styled(Slider)`
   width: 80rem;
+
+  ${mediaMaxWidth("mobile")`
+    width: 100%;
+  `}
 `;
 
 const moveDiagonal = keyframes`

@@ -81,7 +81,7 @@ export const Container = styled.div`
 export const Img = styled(LazyImage)`
   width: 68.2rem;
   height: 47.6rem;
-  object-fit: contain;
+  object-fit: cover;
   border-radius: 1.2rem;
 
   ${mediaMaxWidth("isMobileOrTabletVertical")`

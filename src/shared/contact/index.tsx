@@ -134,8 +134,8 @@ export default () => {
                 {button} {loading && "..."}
               </S.Button>
               <S.List>
-                {info.map((info) => (
-                  <S.Item>
+                {info.map((info, index) => (
+                  <S.Item key={index}>
                     <info.icon />
                     {info.text}
                     <S.Link href={info.link}>{info.content}</S.Link>

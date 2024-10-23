@@ -29,8 +29,8 @@ export default () => {
           <S.ImgBig {...img_big} />
           <S.Slide>
             {slide.map(({ title, icon }, index) => (
-              <S.ContainerSlide $active={index === number}>
-                <S.IconContainer key={title}>
+              <S.ContainerSlide key={title} $active={index === number}>
+                <S.IconContainer>
                   <S.Icon {...icon} />
                 </S.IconContainer>
                 <S.Content>

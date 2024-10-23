@@ -9,8 +9,8 @@ export default () => {
         <S.Article {...{ title, description }} />
 
         <S.Container>
-          {list.map(({ name, position, signature, img }) => (
-            <S.Person>
+          {list.map(({ name, position, signature, img }, index) => (
+            <S.Person key={index}>
               <S.Team>
                 <S.Image {...img} />
                 <S.Shadow>

@@ -10,6 +10,7 @@
     "convert-medias": "node ./script/convert-to-webp.js",
     "sitemap": "node ./script/generate-sitemap.js",
     "build": "yarn sitemap && yarn convert-medias && next build",
+    "test": "next build",
     "start": "next start",
     "export": "next export",
     "lint": "next lint"

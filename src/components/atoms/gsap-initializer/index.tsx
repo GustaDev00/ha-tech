@@ -7,10 +7,6 @@ import { TextPlugin } from "gsap/TextPlugin";
 export const GSAPInitializer = (): null => {
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger, ScrollToPlugin, TextPlugin);
-
-    ScrollTrigger.defaults({
-      scroller: "main",
-    });
   }, []);
 
   return null;

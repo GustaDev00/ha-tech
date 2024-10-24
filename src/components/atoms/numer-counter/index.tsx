@@ -1,10 +1,13 @@
 import { useEffect, useState } from "react";
 import { NumberCounterProps } from "./props";
 
-export const NumberCounter = ({ end, duration }: NumberCounterProps) => {
+export const NumberCounter = ({ end, duration, startAnimation }: NumberCounterProps) => {
   const [count, setCount] = useState(0);
 
   useEffect(() => {
+    console.log("startAnimation", startAnimation);
+    if (!startAnimation) return;
+
     let start = 0;
     const increment = end / ((duration * 1000) / 16);
     const interval = setInterval(() => {
@@ -17,7 +20,7 @@ export const NumberCounter = ({ end, duration }: NumberCounterProps) => {
     }, 16);
 
     return () => clearInterval(interval);
-  }, [end, duration]);
+  }, [end, duration, startAnimation]);
 
   const formatNumber = (number: number): string => {
     return new Intl.NumberFormat("de-DE").format(number);

@@ -141,7 +141,7 @@ export const Data = {
   ],
   button: {
     contact: { title: "Kontakt", href: "/kontakt", text: "Kontaktieren Sie uns" },
-    services: { title: "Mehr dazu", href: "/kontakt", text: "Mehr dazu" },
+    services: { title: "Mehr dazu", href: "/dienstleistungen", text: "Mehr dazu" },
   },
 };
 
@@ -315,7 +315,7 @@ export default {
       },
     ],
     link: {
-      href: "/#",
+      href: "/dienstleistungen",
       title: "Mehr dazu",
     },
     container: {
@@ -731,7 +731,7 @@ export default {
     },
     title: (
       <>
-        Wir feuen uns
+        Wir freuen uns
         <CustomBr byViewport="mobile" /> von Ihnen zu
         <br /> hören!
       </>
@@ -757,7 +757,7 @@ export default {
     location: {
       text: "Location",
       address: "Lerchenstrasse 22, 8754 Netstal",
-      link: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2718.277361095125!2d9.049289477659498!3d47.05440927114459!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47852d0ad5690bd1%3A0xadb75cd9252317d6!2sLerchenstrasse%2022%2C%208754%20Netstal%2C%20Su%C3%AD%C3%A7a!5e0!3m2!1spt-BR!2sbr!4v1727842798690!5m2!1spt-BR!2sbr",
+      link: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2708.773704717194!2d8.639634777013265!3d47.24057217115851!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479aaefe0129a195%3A0xb42a73df0c6af303!2sMoosacherstrasse%204%2C%208804%20Au%20ZH%2C%20Switzerland!5e0!3m2!1sen!2sbr!4v1729736852385!5m2!1sen!2sbr",
     },
   },
 };

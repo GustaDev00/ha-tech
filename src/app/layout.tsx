@@ -28,7 +28,7 @@ const RootLayout = ({
           <ThemeProvider theme={theme}>
             <GlobalStyles />
             <GSAPInitializer />
-            {/* <Loading /> */}
+            <Loading />
             <main>
               <Nav />
               <Suspense>{children}</Suspense>

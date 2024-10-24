@@ -1,8 +1,10 @@
 import C from "@/constants";
 import * as S from "./styles";
+import useAnimation from "./animation";
 import { NumberCounter } from "@/components/atoms/numer-counter";
 
 export default () => {
+  const { sectionRef, isInView } = useAnimation();
   const {
     title,
     description,
@@ -12,14 +14,15 @@ export default () => {
   } = C.about_us;
 
   return (
-    <S.AboutUs>
+    <S.AboutUs ref={sectionRef}>
       <S.Wrapper>
         <S.Container>
           <S.Bg {...bg} />
           <S.Img {...img} />
           <S.Project>
             <S.TitleProject>
-              {project.icon} <NumberCounter end={project.number} duration={1} />
+              {project.icon}{" "}
+              <NumberCounter end={project.number} duration={1} startAnimation={isInView} />
             </S.TitleProject>
             <S.DescriptionProject>{project.text}</S.DescriptionProject>
           </S.Project>

@@ -315,7 +315,7 @@ export default {
       },
     ],
     link: {
-      href: "/dienstleistungen",
+      href: "/uber-uns",
       title: "Mehr dazu",
     },
     container: {

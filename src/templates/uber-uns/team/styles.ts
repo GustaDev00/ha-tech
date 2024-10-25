@@ -114,6 +114,9 @@ export const Position = styled.p`
 `;
 
 export const Signature = styled(LazyImage)`
+  position: relative;
   height: 5.8rem;
   object-fit: contain;
+  right: 3rem;
+  filter: brightness(96%) grayscale(53%);
 `;

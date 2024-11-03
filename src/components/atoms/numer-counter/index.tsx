@@ -5,7 +5,6 @@ export const NumberCounter = ({ end, duration, startAnimation }: NumberCounterPr
   const [count, setCount] = useState(0);
 
   useEffect(() => {
-    console.log("startAnimation", startAnimation);
     if (!startAnimation) return;
 
     let start = 0;

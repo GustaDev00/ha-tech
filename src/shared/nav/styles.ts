@@ -4,7 +4,6 @@ import { Mail as _Mail } from "@/components/svgs/mail";
 import { Menu as _Menu } from "@/components/svgs/menu";
 import { Phone as _Phone } from "@/components/svgs/phone";
 import { mediaMaxWidth } from "@/utils/media-query";
-import _Link from "next/link";
 import styled, { css } from "styled-components";
 
 export const Header = styled.header`
@@ -97,7 +96,7 @@ export const Item = styled.li<{ $active: boolean }>`
   }
 `;
 
-export const Link = styled(_Link)``;
+export const Link = styled.a``;
 
 export const Content = styled.div`
   display: flex;
@@ -169,22 +168,6 @@ export const Modal = styled.div`
   height: 100%;
   background: ${({ theme }) => theme.white};
   transition: right 0.4s ease;
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: url("/imgs/uber-uns/vision/background.png") no-repeat bottom;
-    background-size: contain;
-    z-index: 1;
-
-    ${mediaMaxWidth("mobile")`
-      background-size: cover;
-    `}
-  }
 `;
 
 export const Wrapper = styled.div`

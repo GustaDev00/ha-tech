@@ -6,22 +6,6 @@ import { mediaMaxWidth } from "@/utils/media-query";
 export const Footer = styled.footer`
   position: relative;
   background: ${({ theme }) => theme.white};
-
-  &::before {
-    content: "";
-    display: block;
-    position: absolute;
-    background: url("/imgs/footer.png") no-repeat center center;
-    background-size: contain;
-    height: 100%;
-    width: 100%;
-    z-index: 1;
-
-    ${mediaMaxWidth("mobile")`
-      background-size: 400%;
-      background-position: -2% -5%;
-    `}
-  }
 `;
 
 export const Wrapper = styled(_Wrapper)`

@@ -1,8 +1,6 @@
 import styled, { css } from "styled-components";
 import { mediaMaxWidth } from "@/utils/media-query";
-import Link from "next/link";
 import { MediumArrowRight } from "@/components/svgs/medium-arrow-right";
-import { ShortArrowRight } from "@/components/svgs/short-arrow-right";
 
 const swipeStyles = css`
   position: relative;
@@ -64,6 +62,6 @@ export const ButtonSwipe = styled.button`
   ${swipeStyles}
 `;
 
-export const LinkSwipe = styled(Link)`
+export const LinkSwipe = styled.a`
   ${swipeStyles}
 `;

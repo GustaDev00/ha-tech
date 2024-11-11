@@ -83,30 +83,32 @@ export const Services = styled.div`
     background: linear-gradient(180deg, #0c4261 0%, #042335 100%);
     opacity: 0;
     visibility: hidden;
-    transition: opacity 0.4s ease, visibility 0.4s ease;
+    transition:
+      opacity 0.4s ease,
+      visibility 0.4s ease;
   }
 
   &:first-child {
     ${Container} {
-      bottom: -23rem;
+      bottom: -22rem;
     }
   }
 
   &:nth-child(2) {
     ${Container} {
-      bottom: -18rem;
+      bottom: -17rem;
     }
   }
 
   &:nth-child(3) {
     ${Container} {
-      bottom: -26rem;
+      bottom: -25rem;
     }
   }
 
   &:last-child {
     ${Container} {
-      bottom: -23.1rem;
+      bottom: -22.1rem;
     }
   }
 
@@ -114,25 +116,25 @@ export const Services = styled.div`
     height: 48.4rem;
     &:first-child {
       ${Container} {
-        bottom: -26rem;
+        bottom: -25rem;
       }
     }
 
     &:nth-child(2) {
       ${Container} {
-        bottom: -21rem;
+        bottom: -20rem;
       }
     }
 
     &:nth-child(3) {
       ${Container} {
-        bottom: -26rem;
+        bottom: -25rem;
       }
     }
 
     &:last-child {
       ${Container} {
-        bottom: -25.6rem;
+        bottom: -24.6rem;
       }
     }
   `}
